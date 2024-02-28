@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assist Control</title>
+    <link rel="stylesheet" href="./css/loginPage.css" />
+  </head>
+  <body>
+    <div class="container">
+      <button id="loginBtn">Логин/Регистрация</button>
+    </div>
+    <div id="loginModal" class="modal">
+      <div class="modal-wrapper">
+        <div class="modal-bg">
+          <p class="modal-bg-title">Welcome to your dashboard</p>
+          <p class="modal-bg-subtitle">Sign in to explore change we`ve made</p>
+        </div>
+        <div class="modal-content">
+          <span class="closeBtn">&times;</span>
+          <h2>Вхід</h2>
+          <p class="modal-content-subtitle">Welcome to Assist CONTROL</p>
+          <form id="loginForm" class="form-wrapper">
+            <label class="form-label" for="user-name">Ім’я*</label>
+            <div class="form-field">
+              <input
+                type="text"
+                placeholder="Тарас Шевченко"
+                name="user-name"
+                id="user-name"
+                required
+              />
+              <svg class="form-icon" width="14" height="16">
+                <use href="./img/icons.svg#icon-person-black"></use>
+              </svg>
+            </div>
+            <label class="form-label" for="user-password">password*</label>
+            <div class="form-field">
+              <input
+                type="password"
+                placeholder="Password"
+                name="user-password"
+                id="user-password"
+                required
+              />
+              <svg class="form-icon" width="14" height="16">
+                <use href="./img/icons.svg#icon-key"></use>
+              </svg>
+              <svg class="form-icon-eye" width="14" height="16">
+                <use href="./img/icons.svg#icon-eye"></use>
+              </svg>
+            </div>
+            <button class="form-button" type="submit">Sign IN</button>
+          </form>
+          <p class="form-account">
+            Don't have an Account?
+            <span id="goToRegister"><a href="#">Register</a></span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Модальное окно регистрации -->
+    <div id="registerModal" class="modal">
+      <div class="modal-wrapper">
+        <div class="modal-bg">
+          <p class="modal-bg-title">Welcome to your dashboard</p>
+          <p class="modal-bg-subtitle">Sign in to explore change we`ve made</p>
+        </div>
+        <div class="modal-content">
+          <span class="closeBtn">&times;</span>
+          <h2>Реєстрація</h2>
+          <form id="registrationForm">
+            <label class="form-label" for="user-name">Ім’я*</label>
+            <div class="form-field">
+              <input
+                type="text"
+                placeholder="Тарас Шевченко"
+                name="user-name"
+                id="user-name"
+                required
+              />
+              <svg class="form-icon" width="14" height="16">
+                <use href="./img/icons.svg#icon-person-black"></use>
+              </svg>
+            </div>
+            <label class="form-label" for="email" id="email">E-mail*</label>
+            <div class="form-field">
+              <input type="email" placeholder="E-mail" name="email" required />
+              <svg class="form-icon" width="14" height="16">
+                <use href="./img/icons.svg#icon-email-black"></use>
+              </svg>
+            </div>
+            <label class="form-label" for="company" id="company"
+              >Company name*</label
+            >
+            <div class="form-field">
+              <input
+                type="text"
+                placeholder="Company name"
+                name="company"
+                required
+              />
+              <svg class="form-icon" width="12" height="14">
+                <use href="./img/icons.svg#icon-house"></use>
+              </svg>
+            </div>
+            <label class="form-label" for="user-name">Phone*</label>
+            <div class="form-field">
+              <input type="tel" placeholder="Phone" name="phone" required />
+              <svg class="form-icon" width="14" height="16">
+                <use href="./img/icons.svg#icon-phone-black"></use>
+              </svg>
+            </div>
+            <button type="submit">Sign UP</button>
+          </form>
+          <p class="form-account">
+            Already have an Account?
+            <span id="goToLogin"><a href="#">Login</a></span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
+  </body>
+</html>

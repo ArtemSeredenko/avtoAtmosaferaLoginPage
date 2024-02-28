@@ -1,0 +1,256 @@
+/* reset */
+html,
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+  line-height: 1;
+  font-size: 16px;
+  color: #000;
+  font-family: Roboto, sans-serif;
+}
+
+.container {
+  height: 100vh;
+  background-image: url(../img/bg.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#loginBtn {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.modal {
+  display: none; /* Скрыто по умолчанию */
+  position: fixed; /* Остаётся на месте при прокрутке */
+  z-index: 1; /* Сидит над другими элементами */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Включает прокрутку, если нужно */
+  background-color: rgba(0, 0, 0, 0.4); /* Цвет фона */
+}
+
+.modal-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  height: 100%;
+  width: 100%;
+}
+
+.modal-bg {
+  background-image: url(../img/Fon2.jpg);
+  background-size: cover;
+  width: 480px;
+  height: 640px;
+  flex-shrink: 0;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 61px;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  background: #151616; /* Темный фон формы */
+  padding: 78px;
+  border-radius: 5px;
+  width: 480px; /* Или подстройте под размер вашей формы */
+  height: 640px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  text-align: center; /* Текст по центру */
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  position: relative;
+}
+
+.modal-content h2 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+
+  text-align: left;
+}
+
+.modal-content p {
+  color: #aaa;
+}
+
+.modal-content form {
+  margin-top: 20px;
+}
+
+.modal-content input {
+}
+
+.modal-content button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 1px;
+  background-color: #008cba;
+  color: #e9e9e9;
+  font-size: 11px;
+  cursor: pointer;
+  margin-top: 24px;
+  font-weight: 500;
+  transition: background-color 0.3s ease-in;
+}
+
+.modal-content button:hover {
+  background-color: #005f73;
+}
+
+.modal-content .toggle-login {
+  color: #00bfff;
+  text-decoration: none;
+}
+
+.modal-content .toggle-login:hover {
+  color: #008cba;
+}
+
+.modal-bg-title,
+.modal-bg-subtitle {
+  text-align: center;
+  color: #ffffff;
+}
+
+.modal-bg-title {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.modal-bg-subtitle {
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: #ddd;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.modal-content-subtitle {
+  text-align: left;
+  margin-top: 6px;
+  font-size: 10px;
+  color: #8d8d8d;
+  font-weight: 500;
+  margin-bottom: 42px;
+}
+
+.form-label {
+  font-weight: 500;
+  font-size: 11px;
+  color: #e9e9e9;
+  float: left;
+  margin-bottom: 8px;
+}
+.form-field {
+  position: relative;
+}
+
+.form-field input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 2px;
+  background: #222;
+  padding-left: 35px;
+  font-weight: 500;
+  font-size: 12px;
+  color: #615f68;
+  margin-bottom: 17px;
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.form-field input:focus,
+.form-field input:active {
+  border-color: #615f68;
+}
+
+.form-icon {
+  fill: #6e6c77;
+  position: absolute;
+  left: 10px;
+  top: 28px;
+}
+
+.form-icon-eye {
+  position: absolute;
+  right: 10px;
+  top: 28px;
+  fill: #6e6c77;
+}
+
+.form-account {
+  margin-top: auto;
+  align-items: flex-end;
+  text-align: left;
+  font-weight: 500;
+  font-size: 11px;
+  color: #e9e9e9;
+}
+
+.form-account a {
+  color: #0096b7;
+}
